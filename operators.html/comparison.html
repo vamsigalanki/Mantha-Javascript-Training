@@ -1,0 +1,50 @@
+comparsion operator:Comparison operators in JavaScript are used to compare two values. They return a boolean value (true or false) based on whether the comparison is true.
+<html>
+    <body>
+        <script>
+          //1.Equal to (==):   if two values are equal. It performs type conversion if necessary.
+           let a=5;
+           let b="5" ;
+           console.log(a==b); // output is true.
+
+           //2.strict equal to(===):if two values are equal and of the same type. It does not perform type conversion.
+             let c=5;
+             let d="5" ;
+             console.log(c===d) //output is false.
+
+            //3.Not equal to (!=):if two values are not equal.
+             let e=5;
+             let f="5";
+             console.log( e!=f);//output is false.
+
+             //4.Strict Not Equal to (!==): if two values are not equal or not of the same type. It does not perform type conversion.
+               let g=5;
+               let h="5";
+               console.log(g!==h)//output is true,(because '5' is a string and 5 is a number)
+
+               //5.Greater than (>):if the value on the left is greater than the value on the right.
+                 let i=10;
+                 let j=5;
+                 console.log(i>j) //output is true.
+
+
+                //6. Less than (<):if the value on the left is less than the value on the right.
+                    let k=10;
+                    let l=15;
+                    console.log(k<l) //output is true.
+
+                  //7.  Greater than or Equal to (>=):if the value on the left is greater than or equal to the value on the right.
+                      let m=10;
+                      let n=10;
+                      console.log(m>=n) // output is true.
+
+                //8.Less than or Equal to (<=):Less than or Equal to (<=)
+                   let o=10;
+                   let p=15;
+                   console.log(o <=p) //output is true
+
+
+
+        </script>
+    </body>
+</html>
