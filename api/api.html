@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <label>name:</label>
+        <input type="text" id="d1"/><br/>
+        <input type="text" id="d2"/><br/>
+        <input type="text" id="d3"/> <br/>
+        <button onclick="abc()">submit</button>
+
+    </body>
+    <script>
+        const x=[]
+        
+        function abc(){
+            alert("hiiii")
+            const name=document.getElementById("d1");
+            const age=document.getElementById("d2");
+            const colour=document.getElementById("d3")
+            const y={
+                "Name":name.value,
+                "Age":age.value,
+                "Colour":colour.value,
+
+
+            }
+              x.push(y)
+              console.log(x)
+                
+
+            
+              localStorage.setItem( 'data',JSON.stringify(x));
+        }
+          
+    </script>
+    
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>event handler & onchange</title>
+</head>
+<body>
+    <form>
+        <label >Choose a cricketer:</label>
+        <select id="cricket" name="cricket" onchange="colorChanged()">
+            <option value="leader">dhoni</option>
+            <option value="machine">kohli</option>
+            <option value="hitman">rohit</option>
+        </select>
+    </form>
+    <script>
+        function colorChanged() {
+            var cricket = document.getElementById("cricket").value;
+            alert("You selected: " + cricket);
+        }
+    </script>
+</body>
+</html>
