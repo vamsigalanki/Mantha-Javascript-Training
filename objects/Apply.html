@@ -1,0 +1,26 @@
+what is apply:
+works same as call function but apply function helps the array
+auto splitting.
+
+<html>
+    <body>
+        <script>
+            var emp ={
+                name:"Rahul",
+                address:"HYD",
+                getInfo: function(country , pincode , hno) {
+                return this.name +"\t" + this.address +"\t" + country +"\t" + pincode+"\t"+ hno;
+                
+                }
+             }
+             var emp2={
+                name:"John",
+                address:"Delhi",
+                }
+                console.log(emp.getInfo());  //rahul hyd undefined undefined
+                var arr= ["India" , 40449 , "12-09-pph"];
+                console.log(emp.getInfo.call(emp2,arr[0],arr[1],arr[2]));  //john delhi india 40449 12-09-pph
+
+        </script>
+    </body>
+</html>

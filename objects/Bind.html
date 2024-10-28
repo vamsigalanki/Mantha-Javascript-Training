@@ -1,0 +1,21 @@
+Bind :- Bind:-The bind () helps the object to borrow a method from
+another object .
+<html>
+    <body>
+        <script>
+            var emp ={
+                name:"Rahul",
+                address:"HYD",
+                getInfo: function() {
+                console.log(this.name +"\t" + this.address) ;
+                }
+            }
+            var emp2={
+                    name:"John",
+                    address:"Delhi",
+                    }
+                    var hello=emp.getInfo.bind(emp2);
+                    hello();
+        </script>
+    </body>
+</html>

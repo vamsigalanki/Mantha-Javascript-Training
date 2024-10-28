@@ -1,0 +1,36 @@
+properties are static and accessed directly from the Number object.
+
+<html>
+    <heaD></heaD>
+    <body>
+        <script>
+            //1.Number.MAX_VALUE:
+
+           // The largest positive number that JavaScript can handle.
+            //pproximately 1.7976931348623157e+308.
+            console.log(number.MAX_VALUE); // 1.7976931348623157e+308.
+
+            //2.Number.MIN_VALUE:
+            //The smallest positive number (closest to 0) that JavaScript can handle.  5e-324
+             console.log(number.MIN_VALUE) ;
+
+             //3.epresents positive infinity. It’s returned when a number exceeds
+             console.log(number.POSITIVE_INFINITY);//INFINITY
+
+             //4. Represents negative infinity. It’s returned when a negative number exceeds
+                 console.log(number.NEGATIVE_INFINITY);  //-INFINITY
+
+            //5.NAN:epresents a value that is "Not-a-Number". It’s usually the result of an invalid arithmetic operation, such as dividing a string by a number.
+                 console.log(number.NaN); //NaN
+                 console.log(isNaN("abc"/2)) //true
+
+            //6.Number.MAX_SAFE_INTEGER:
+
+                        // The largest integer that can be represented safely in JavaScript (2^53 - 1).
+              console.log(number.MAX_SAFE_INTEGER); //  9007199254740991
+              
+              //7.Number.MIN_SAFE_INTEGER:  he smallest integer that can be represented safely in JavaScript (-(2^53 - 1)
+                console.log(number.MIN_SAFE_INTEGER); //  -9007199254740991
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+Nested properties of an object are properties within properties. An object can
+contain another object as a property. 
+<html>
+    <head></head>
+    <body>
+        <script>
+            const person = {
+            fname:"John",
+            lname:"Doe",
+            age: 24,
+            address : {
+                gender:"male",
+                city:"hyderabad",
+              country : {
+                state:"telangana",
+                countries:"india"
+                }
+            }
+        }
+        console.log(person.address.city)
+        console.log(person.address. country.countries);
+            
+        </script>
+    </body>
+</html>

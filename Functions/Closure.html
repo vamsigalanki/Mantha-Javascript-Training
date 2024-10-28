@@ -1,0 +1,20 @@
+what is closure ?
+ a function within the function is called closure
+
+ <html>
+    <head></head>
+    <body>
+        <script>
+            function outer(){
+                var i=0;
+                function inner(){
+                    i++;
+                    console.log("increment:::",i);
+                }
+                    return inner;
+            }
+            const closureFunc=outer();
+            closureFunc();
+        </script>
+    </body>
+ </html>

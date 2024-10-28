@@ -1,0 +1,56 @@
+Common String Methods
+JavaScript provides a wide variety of string manipulation methods. Here are some commonly used ones:
+
+<html>
+    <head></head>
+    <body>
+        <script>
+            //1.length of string:the length of a string using the .length property.
+             let str="hello, world";
+             console.log(str.length) //output=13.
+
+             //2.Accessing Characters in a String:chatAt()
+               //You can access individual characters in a string using bracket notation or the charAt() method.
+                 let st="hellow";
+                 console.log(str[0]); //output= h
+                 console.log(st.charAt(1)); //output= e
+
+            // 3.toUpperCase():Converts the string to uppercase
+                let ar="hello world";
+                console.log(ar.toUpperCase());//HELLO WORLD
+
+            //4.toLowerCase():Converts the string to lowercase.
+                let arg="hello world";
+                console.log(arg.toLowerCase()) //hello world.
+
+            //5.indexOf(): Returns the index of the first occurrence of a substring. Returns -1 if not found.
+                let ag="hello world";
+                console.log(ag.indexOf("world"))//6
+
+            //6.lastIndexOf(): Returns the index of the last occurrence of a substring.
+                let ga="hello world";
+                console.log(ga.lastIndexOf("world")) //6
+
+            //7.includes(): Checks if a substring exists in the string (returns true or false).
+                   let gh="hellow";
+                   console.log(gh.includes("hello"));
+
+            //8.Concatenating Strings concat(): Joins two or more strings together.
+                let str1="hello";
+                let str2="world";
+                console.log(str1.concat( ",",str2));
+
+            //9.Trimming White Spaces trim();
+            //trim(): Removes whitespace from both sides of the string.
+                   let stk="    hello world   ";
+                   console.log(str.trim()); // hello world
+
+             
+                    //   10.split(separator): Splits the string into an array based on the given separator
+                    let ty="apple,orange,cherry";
+                    console.log(ty.split(","))  //[apple,orange,cherry]
+
+                    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+whta is this keyword?
+- In Javascript this keyword refers to an current object .not a variable, it is a keyword,its value cannot be changed.
+
+<html>
+
+    <body>
+        <script>
+            let person={
+                firstName:"vamsi",
+                lastName:"galanki",
+                // greet:function(){
+                    // console.log("hello world");
+                //},
+                getFullName:function(){
+                    return this.firstName +' '+ this.lastName;
+                }
+            }
+           // person.greet();
+            console.log(person.getFullName());
+        </script>
+    </body>
+</html>

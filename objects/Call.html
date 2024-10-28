@@ -1,0 +1,26 @@
+what is call function?
+- If we want to reuse the existing object resources (when
+matching the structure), then use a call function.
+
+
+<html>
+    <body>
+        <script>
+
+            var customer={
+            name:"Rahul",
+            address:"HYD",
+            details: function(){
+            return this.name+"\t"+this.address
+            },
+            
+        }
+          let customer2={
+            age:33,
+            gender:"male",
+          }
+        console.log(customer.details()); //rahul hyd
+        console.log(customer.details.call(customer2));  // undefined  undefined 
+        </script>
+    </body>
+</html>

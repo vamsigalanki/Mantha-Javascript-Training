@@ -1,0 +1,19 @@
+   spread operaator:the spread operator ( ... ) to unpack elements of an array. The spread
+   operator can be very useful to clone an array.
+     <html>]
+        <head>
+            <body>
+                <script>
+                    //example of spread operator
+                    let colors=["red",'green','blue'];
+                    let rgb=[...colors];
+                    console.log(rgb);//['red','green','blue']
+
+                    //merge two sprwad operators
+                       let cmk=['yello','white'];
+                       let merge=[...colors,...cmk];
+                       console.log(merge) //['red','green','blue','yello','white']
+                </script>
+            </body>
+        </head>
+     </html>

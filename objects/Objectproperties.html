@@ -1,0 +1,56 @@
+  object properties:
+  there are two types of object properties 
+  1.dot notation
+  2.array-like notation
+  3.modifying the value
+  4.adding new properrty
+  5.deleting property
+<html>
+    <head>
+        <body>
+            <script>
+                //1.dot notation:we use dot notation to acces the a property of an object
+                   let person={
+                      name:"vamsi",
+                      age:25,
+                      city:"hyderabad",
+                      'building no': "10-32/4D/D5"
+                   }
+                   console.log(person.name) ;//vamsi
+
+                //2.Array like notation[]: we use to acces the value of an object property 
+                    console.log(person["city"]); //hyderabad
+
+                // When a property name contains spaces, you need to place it inside
+                // quotes. To access the 'building no' property, you need to use the
+                // array-like notation , If you use the dot notation, you’ll get an error:
+                    console.log(person['building no']);
+                   // console.log(person.building no)// error
+
+
+                  //3.modifying the value of  property:
+                   person.name="azmath";
+                   console.log(person); //azmath
+
+                   //4.adding the new property to an object:
+                      person.gender="male";
+                      console.log(person); //male
+
+                      //5.deleting the property of an object:
+                      delete person.city;
+                      console.log(person);
+
+                      //6.checking if a property exists:
+                    //  you use the in operator:
+                    // propertyName in objectName
+                    //The in operator returns true if the propertyName exists in the objectName.
+                      
+                    console.log("age" in person); //true
+            
+                        
+
+
+            </script>
+        </body>
+    </head>
+</html>
